@@ -1,9 +1,10 @@
 package com.qxy.belajardatabase.screen.add
 
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
@@ -19,6 +20,12 @@ fun AddNewsCompose(
             )
         }
     ) {
-
+        Column(modifier = Modifier.fillMaxWidth()) {
+            OutlinedTextField(value = "", onValueChange = {}, label = { Text(text = "Title") })
+            OutlinedTextField(value = "", onValueChange = {}, label = { Text(text = "Content") })
+            Button(onClick = {}) {
+                Text(text = "Simpan")
+            }
+        }
     }
 }
