@@ -11,5 +11,5 @@ data class News(
     @ColumnInfo(name = "title")
     val title: String,
     @ColumnInfo(name = "content")
-    val string: String
+    val content: String
 )
