@@ -46,7 +46,9 @@ private fun ContentAdd(modifier: Modifier = Modifier, viewModel: AddViewModel) {
             },
             label = { Text(text = "Content") })
 
-        Button(onClick = {}) {
+        Button(onClick = {
+            viewModel.submit()
+        }) {
             Text(text = "Simpan")
         }
     }
